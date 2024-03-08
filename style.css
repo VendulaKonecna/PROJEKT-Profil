@@ -1,7 +1,10 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
-
+*{
+	margin: 0;
+	padding: 0;
+}
 /*
 	BARVY
 	czechitas  #b92e81
@@ -16,4 +19,68 @@ html { box-sizing: border-box; }
 
 body {
 	background-color: #bdc3c7;
+	font-family: "Source Sans 3", sans-serif;
+	font-size: 13px;
+	color: rgb(204, 212, 219);
+}
+h1{
+	margin-bottom: 20px;
+	font-family: "Montserrat", sans-serif;
+}
+.profil{
+	width: 300px;
+	margin: 0 auto;
+	background-color: #31363b;
+	box-shadow: 3px 3px 10px rgb(85, 85, 85);
+}
+.hlavicka{
+	margin-top: 30px;
+	height: 200px;
+	position: relative;
+}
+.foto{
+	width: 300px;
+}
+.logo{
+	position: absolute;
+	top: 175px;
+	right: 30px;
+	background-color: #b92e81;
+	border-radius: 50%;
+	box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+.obsah{
+	padding: 23px;
+}
+.odkazy li{
+	display: inline-block;
+}
+.odkazy a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	border-top: 1px solid #3f464d;
+	color: rgb(204, 212, 219);
+	font-family: "Montserrat", sans-serif;
+}
+.portfolio{
+	width:100%;
+}
+.facebook,
+.twitter{
+	width: 49.5%;
+}
+.facebook{
+	border-right: 1px solid #3f464d;
+}
+.portfolio:hover{
+	background-color: #e74c3c;
+}
+.facebook:hover{
+	background-color: #3b5998;
+}
+.twitter:hover{
+    background-color: #1da1f2;
 }
